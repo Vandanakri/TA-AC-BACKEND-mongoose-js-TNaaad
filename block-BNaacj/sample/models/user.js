@@ -3,9 +3,9 @@ var schema = mongoose.schema;
 
 var userschema = new schema({
   password: { type: String, min:5,max:15},
-  createAt: date
+  createAt: { type: Date, default: new Date()}
 
-},{timestamps:true})
+}
 
 
 
