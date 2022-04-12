@@ -6,6 +6,4 @@ var userschema = new schema({
   createAt: { type: Date, default: new Date()}
 
 }
-
-
-
+)
