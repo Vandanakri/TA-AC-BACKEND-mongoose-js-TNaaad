@@ -2,12 +2,9 @@ var mongoose = require('mongoose');
 var schema = mongoose.schema;
 
 var userschema = new schema({
-  name: "Vandana",
-  email: "vandana123annusah@gamil.com",
-  age: 23,
+  name: String,
+  email: {type: String, lowercase:true},
+  age: {type:Number,default: 0},
   
 })
 
-var userschema = new schema({
-  name:{ type: String, lowercase:true}
-})
