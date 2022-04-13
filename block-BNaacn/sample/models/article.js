@@ -1,4 +1,5 @@
-var schema = mongoose.schema;
+var mongoose = require('mongoose')
+var Schema = mongoose.schema;
 
 var articleSchema = new schema({
   title:String,
@@ -7,6 +8,4 @@ var articleSchema = new schema({
   createAt: { type: Date, default: new Date()},
   likes: { type:Number, default: 0}
 })
-var Article = mongoose.model('Article',articleSchema);
-
-module.exports = Article;
+module.exports = mongoose.model('Article',articleSchema);
