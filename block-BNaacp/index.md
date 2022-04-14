@@ -59,3 +59,4 @@ app.delete("/users", (req, res) => {
 ```
 
 Similarily, handle all above routes taking help from delete route.
+
